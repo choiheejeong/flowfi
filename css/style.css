@@ -23,6 +23,7 @@ a {
 /*상단*/
 header {
   position: fixed;
+  z-index: 999;
   /*모바일*/
 }
 header .inner {
@@ -1202,6 +1203,9 @@ footer .address pre {
   font-size: 18px;
   font-weight: lighter;
 }
+footer .address .mobile_add {
+  display: none;
+}
 
 @media (max-width: 1700px) {
   #main_view .main_guide .flowfi_guide h3 {
@@ -2028,6 +2032,7 @@ footer .address pre {
   }
   #product .m_p_inner {
     display: block;
+    width: 100%;
   }
   #product .prev, #product .next {
     display: none;
@@ -2053,14 +2058,18 @@ footer .address pre {
   }
 }
 @media (max-width: 430px) {
+  header {
+    width: 100%;
+    box-sizing: border-box;
+  }
   header .mobile_inner {
     height: 58px;
   }
   header .mobile_inner .m_burger {
-    margin-left: 8.1%;
+    padding-left: 20px;
   }
   header .mobile_inner .myinfo {
-    margin-right: 8.1%;
+    padding-right: 20px;
   }
   #main_view {
     padding: 90px 38px 0 38px;
@@ -2092,7 +2101,7 @@ footer .address pre {
   }
   #main_view .main_guide .flowfi_guide h3 {
     font-size: 20px;
-    margin-top: 27px;
+    margin-top: 26px;
   }
   #main_view .main_guide .flowfi_guide p {
     margin: -35px 0 0 210px;
@@ -2118,10 +2127,10 @@ footer .address pre {
   }
   #main_view .main_guide .login_ment h4 {
     font-size: 18px;
-    margin-top: 27px;
+    margin-top: 26px;
   }
   #main_view .main_guide .login_ment ul {
-    margin-top: -20px;
+    margin-top: -22px;
     right: -65px;
   }
   #main_view .main_guide .login_ment li {
@@ -2142,5 +2151,178 @@ footer .address pre {
   }
   #main_view .main_guide .login_ment .login_inner .m_join {
     left: -7px;
+  }
+  #main_view .mobile_ranking {
+    height: 591px;
+    margin-top: 0;
+  }
+  #main_view .mobile_ranking .best_view h3 {
+    font-size: 17px;
+    margin: 25px 0 25px 25px;
+  }
+  #main_view .mobile_ranking .best_view h3 em {
+    font-size: 13px;
+  }
+  #main_view .mobile_ranking .best_view p {
+    margin-right: 20px;
+  }
+  #main_view .mobile_ranking .best_view img {
+    height: 40px;
+  }
+  #main_view .mobile_ranking .best_view li::before {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 20px 0 30px;
+  }
+  #main_view .mobile_ranking .best_view li::after {
+    width: 55px;
+    height: 30px;
+    right: 20px;
+  }
+  #main_view .mobile_ranking .best_view pre {
+    font-size: 16px;
+  }
+  #main_view .mobile_ranking .best_view span {
+    font-size: 13px;
+  }
+  #main_video {
+    padding: 40px 38px 30px 38px;
+  }
+  #main_video .inner {
+    height: 447px;
+  }
+  #main_video .iu_concert .video_txt {
+    text-align: center;
+    left: 28px;
+  }
+  #main_video .iu_concert .video_txt h2 {
+    font-size: 16px;
+  }
+  #main_video .iu_concert .video_txt span {
+    font-size: 10px;
+  }
+  #invest {
+    padding: 20px 38px 30px 38px;
+  }
+  #invest .inner {
+    height: 850px;
+  }
+  #invest .in_list {
+    height: 450px;
+  }
+  #invest .in_list li:last-child {
+    visibility: visible;
+  }
+  #invest .in_list h3 {
+    font-size: 17px;
+    margin-left: 25px;
+  }
+  #invest .in_list em {
+    font-size: 13px;
+  }
+  #invest .in_list li {
+    width: 85% !important;
+    margin-left: 20px;
+    height: 40px;
+  }
+  #invest .in_list img {
+    height: 40px;
+  }
+  #invest .in_list li::before {
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 0 20px 0 30px;
+  }
+  #invest .in_list li::after {
+    line-height: 60px;
+  }
+  #invest .in_list pre {
+    font-size: 15px;
+  }
+  #invest .in_chart {
+    height: 350px;
+  }
+  #invest .in_chart .c_slider {
+    width: 100%;
+  }
+  #invest .in_chart .chart_title h3 {
+    margin: 25px 0 25px 25px;
+  }
+  #invest .in_chart .chart_title h3 img {
+    height: 50px;
+  }
+  #invest .in_chart .chart_title pre {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  #invest .in_chart .chart_title span {
+    font-size: 17px;
+  }
+  #invest .in_chart .chart_title em, #invest .in_chart .chart_title b {
+    font-size: 14px;
+  }
+  #invest .in_chart .chart_sub {
+    display: none;
+  }
+  #product {
+    padding: 40px 38px 30px 38px;
+  }
+  #product .m_p_inner {
+    width: 100% !important;
+    height: auto;
+  }
+  #product .m_p_inner .mobile_product li {
+    width: 339px;
+    margin-bottom: 40px;
+  }
+  #product .m_p_inner .mobile_product li:last-child {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+  #collabo {
+    padding: 60px 38px 0 38px;
+  }
+  #collabo .company {
+    border-radius: 18px;
+    margin-bottom: 40px;
+  }
+  #collabo .company ul {
+    height: 70px;
+  }
+  #collabo .company li {
+    margin-right: 120px;
+  }
+  #collabo .company img {
+    width: 110px;
+  }
+  #collabo .bank {
+    border-radius: 18px;
+  }
+  #collabo .bank ul {
+    height: 70px;
+  }
+  #collabo .bank li {
+    margin-right: 120px;
+  }
+  #collabo .bank img {
+    width: 130px;
+  }
+  footer {
+    padding: 0 38px 0 38px;
+    margin-top: 50px;
+  }
+  footer .footer_logo {
+    display: none;
+  }
+  footer .address {
+    margin: 33px 0 0 15px;
+  }
+  footer .address pre {
+    display: none;
+  }
+  footer .address .mobile_add {
+    display: block;
+    font-size: 13px;
+    line-height: 2;
   }
 }

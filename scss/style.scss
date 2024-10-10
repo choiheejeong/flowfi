@@ -12,7 +12,7 @@ a{text-decoration:none; color:inherit;}
 
 /*상단*/
 header{
-  position:fixed;
+  position:fixed; z-index:999;
   .inner{background:#191919; width:120px; height:100vh;
    color:#878787; font-size:36px; box-sizing:border-box;
    display:flex; flex-direction:column;
@@ -458,6 +458,7 @@ footer{
   .address{
     float:left; margin:55px 0 0 120px;
     pre{line-height:2.5; font-size:18px; font-weight:lighter;}
+    .mobile_add{display:none;}
   }
 }//e:footer
 
@@ -993,7 +994,7 @@ footer{
   #product{
   padding:50px 45px 60px 45px;
   .p_inner{display:none;}
-  .m_p_inner{display:block;}
+  .m_p_inner{display:block; width:100%;}
   .prev, .next{display:none;}
   }//e:#product
 
@@ -1017,9 +1018,11 @@ footer{
 
 @media (max-width:430px){
   header{
+    width:100%;
+    box-sizing:border-box;
     .mobile_inner{height:58px;
-    .m_burger{margin-left:8.1%;}
-    .myinfo{margin-right:8.1%;}
+    .m_burger{padding-left:20px;}
+    .myinfo{padding-right:20px;}
     }
   }//e:header
 
@@ -1041,7 +1044,7 @@ footer{
       height:258px; margin-bottom:39px;
       .flowfi_guide{
         height:110px;
-        h3{font-size:20px; margin-top:27px;}
+        h3{font-size:20px; margin-top:26px;}
         p{margin:-35px 0 0 210px; font-size:13px;}
         p::before,
         p::after{top:25%; right:84px;}
@@ -1052,8 +1055,8 @@ footer{
       }//e:.flowfi_guide
       .login_ment{
         height:110px;
-        h4{font-size:18px; margin-top:27px;}
-        ul{margin-top:-20px; right:-65px;}
+        h4{font-size:18px; margin-top:26px;}
+        ul{margin-top:-22px; right:-65px;}
         li{margin-bottom:5px;}
         li::before{width:70px; height:25px;}
         .login_inner{
@@ -1064,8 +1067,98 @@ footer{
       }//e:.login_ment
     }//e:.main_guide
 
-
+    .mobile_ranking{
+      height:591px; margin-top:0;
+      .best_view{
+        h3{font-size:17px; margin:25px 0 25px 25px;
+        em{font-size:13px;}
+        }
+        p{margin-right:20px;}
+        img{height:40px;}
+        li::before{font-size:20px; line-height:40px; margin:0 20px 0 30px;}
+        li::after{width:55px; height:30px; right:20px;}
+        pre{font-size:16px;}
+        span{font-size:13px;}
+     }
+    }//e:.mobile_ranking
   }//e:#main_view
 
+  #main_video{
+    padding:40px 38px 30px 38px;
+    .inner{height:447px;}
+    .iu_concert{
+      .video_txt{
+        text-align:center; left:28px;
+        h2{font-size:16px;}
+        span{font-size:10px;}
+      }//e:.video_txt
+    }
+  }//e:#main_video
+
+  #invest{
+    padding:20px 38px 30px 38px;
+    .inner{height:850px;}
+    .in_list{
+      height:450px;
+      li:last-child{visibility:visible;}
+      h3{font-size:17px; margin-left:25px;}
+      em{font-size:13px;}
+      li{width:85% !important; margin-left:20px; height:40px;}
+      img{height:40px;}
+      li::before{font-size:20px; line-height:40px; margin-left:0 20px 0 30px;}
+      li::after{line-height:60px;}
+      pre{font-size:15px;}
+    }//e:.in_list
+
+    .in_chart{
+      height:350px;
+      .c_slider{width:100%;}
+      .chart_title{
+        h3{margin:25px 0 25px 25px;}
+        h3 img{height:50px;}
+        pre{font-size:16px; margin-left:15px;}
+        span{font-size:17px;}
+        em, b{font-size:14px;}
+      }
+      .chart_sub{display:none;}
+    }//.in_chart
+  }//e:#invest
+
+  #product{
+    padding:40px 38px 30px 38px;
+    .m_p_inner{
+      width:100% !important; height:auto;
+      .mobile_product{
+        li{width:339px; margin-bottom:40px;}
+        li:last-child{margin-bottom:0; margin-top:40px;}
+      }
+    }//e:.m_p_inner
+  }//e:#product
+
+  #collabo{
+    padding:60px 38px 0 38px;
+    .company{
+      border-radius:18px; margin-bottom:40px;
+      ul{height:70px;}
+      li{margin-right:120px;}
+      img{width:110px;}
+    }
+    .bank{
+      border-radius:18px;
+      ul{height:70px;}
+      li{margin-right:120px;}
+      img{width:130px;}
+    }
+  }//e:#collabo
+
+  footer{
+    padding:0 38px 0 38px; margin-top:50px;
+    .footer_logo{display:none;}
+    .address{
+      margin:33px 0 0 15px;
+      pre{display:none;}
+      .mobile_add{display:block; font-size:13px; line-height:2;}
+    }
+  }//e:footer
 
 }//end:@meida(430px)
