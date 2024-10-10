@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="187" viewBox="0 0 330 187">
+  <g id="그룹_221" data-name="그룹 221" transform="translate(-848 -2006)">
+    <g id="사각형_148" data-name="사각형 148" transform="translate(848 2006)" fill="#505050" stroke="#7e7e7e" stroke-width="1">
+      <rect width="330" height="187" rx="28" stroke="none"/>
+      <rect x="0.5" y="0.5" width="329" height="186" rx="27.5" fill="none"/>
+    </g>
+    <text id="영업이익" transform="translate(875 2044)" fill="#fff" font-size="15" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">영업이익</tspan></text>
+    <text id="실제" transform="translate(960 2044)" fill="#fff" font-size="13" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">실제</tspan></text>
+    <text id="예상" transform="translate(1014 2044)" fill="#fff" font-size="13" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">예상</tspan></text>
+    <text id="_1_800억원" data-name="1,800억원" transform="translate(891.349 2077)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="0" y="0">1,800억원</tspan></text>
+    <text id="_2023년_3분기" data-name="2023년
+3분기" transform="translate(967.349 2165)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="-14.55" y="0">2023년</tspan><tspan x="-10.516" y="11">3분기</tspan></text>
+    <text id="_2023년_4분기" data-name="2023년
+4분기" transform="translate(1018.349 2165)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="-14.55" y="0">2023년</tspan><tspan x="-10.516" y="11">4분기</tspan></text>
+    <text id="_2024년_1분기" data-name="2024년
+1분기" transform="translate(1068.349 2165)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="-14.482" y="0">2024년</tspan><tspan x="-9.677" y="11">1분기</tspan></text>
+    <text id="_2024년_2분기" data-name="2024년
+2분기" transform="translate(1119.349 2165)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="-14.482" y="0">2024년</tspan><tspan x="-10.428" y="11">2분기</tspan></text>
+    <text id="_1_200억원" data-name="1,200억원" transform="translate(891.349 2100)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="0" y="0">1,200억원</tspan></text>
+    <text id="_600억원" data-name="600억원" transform="translate(897.349 2123)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="0" y="0">600억원</tspan></text>
+    <text id="_0" data-name="0" transform="translate(924.349 2146)" fill="#fff" font-size="9" font-family="Pretendard-Light, Pretendard" font-weight="300"><tspan x="0" y="0">0</tspan></text>
+    <circle id="타원_56" data-name="타원 56" cx="5" cy="5" r="5" transform="translate(942 2034)" fill="#e25050"/>
+    <g id="타원_57" data-name="타원 57" transform="translate(996 2034)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="4.5" fill="none"/>
+    </g>
+    <g id="타원_59" data-name="타원 59" transform="translate(962.349 2113)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="4.5" fill="none"/>
+    </g>
+    <g id="타원_63" data-name="타원 63" transform="translate(1114.349 2115)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="2">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="4.5" fill="none"/>
+    </g>
+    <path id="패스_373" data-name="패스 373" d="M2376.039,2073.5h185.109" transform="translate(-1426.497)" fill="none" stroke="#707070" stroke-width="0.2"/>
+    <path id="패스_374" data-name="패스 374" d="M2376.039,2073.5h185.109" transform="translate(-1426.497 23)" fill="none" stroke="#707070" stroke-width="0.2"/>
+    <path id="패스_375" data-name="패스 375" d="M2376.039,2073.5h185.109" transform="translate(-1426.497 46)" fill="none" stroke="#707070" stroke-width="0.2"/>
+    <path id="패스_376" data-name="패스 376" d="M2376.039,2073.5h185.109" transform="translate(-1426.497 69)" fill="none" stroke="#707070" stroke-width="0.2"/>
+    <circle id="타원_58" data-name="타원 58" cx="5" cy="5" r="5" transform="translate(962.349 2111)" fill="#e25050"/>
+    <circle id="타원_60" data-name="타원 60" cx="5" cy="5" r="5" transform="translate(1013.349 2097)" fill="#4577ff"/>
+    <circle id="타원_61" data-name="타원 61" cx="5" cy="5" r="5" transform="translate(1063.349 2133)" fill="#4577ff"/>
+    <circle id="타원_62" data-name="타원 62" cx="5" cy="5" r="5" transform="translate(1114.349 2118)" fill="#4577ff"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="187" viewBox="0 0 330 187">
+  <g id="그룹_223" data-name="그룹 223" transform="translate(-1552 -2006)">
+    <g id="사각형_149" data-name="사각형 149" transform="translate(1552 2006)" fill="#505050" stroke="#7e7e7e" stroke-width="1">
+      <rect width="330" height="187" rx="28" stroke="none"/>
+      <rect x="0.5" y="0.5" width="329" height="186" rx="27.5" fill="none"/>
+    </g>
+    <text id="투자자_매매_동향" data-name="투자자 매매 동향" transform="translate(1580 2044)" fill="#fff" font-size="15" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">투자자 매매 동향</tspan></text>
+    <text id="개인" transform="translate(1580 2081)" fill="#fff" font-size="13" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">개인</tspan></text>
+    <rect id="사각형_157" data-name="사각형 157" width="161" height="4" rx="2" transform="translate(1697 2074)" fill="#727272"/>
+    <rect id="사각형_158" data-name="사각형 158" width="74" height="4" rx="2" transform="translate(1697 2074)" fill="#4577ff"/>
+    <g id="그룹_160" data-name="그룹 160" transform="translate(1580 2145.789)">
+      <text id="_11_498" data-name="+11,498" transform="translate(49 13.211)" fill="#e25050" font-size="13" font-family="Pretendard-Medium, Pretendard" font-weight="500"><tspan x="0" y="0">+11,498</tspan></text>
+      <text id="기관" transform="translate(0 13.211)" fill="#fff" font-size="13" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">기관</tspan></text>
+      <rect id="사각형_162" data-name="사각형 162" width="161" height="4" rx="2" transform="translate(117 6.211)" fill="#727272"/>
+      <rect id="사각형_161" data-name="사각형 161" width="74" height="4" rx="2" transform="translate(204 6.211)" fill="#e25050"/>
+    </g>
+    <text id="_-1_771" data-name="-1,771" transform="translate(1641 2120)" fill="#4577ff" font-size="13" font-family="Pretendard-Medium, Pretendard" font-weight="500"><tspan x="0" y="0">-1,771</tspan></text>
+    <text id="_-10_568" data-name="-10,568" transform="translate(1676 2081)" fill="#4577ff" font-size="13" font-family="Pretendard-Medium, Pretendard" font-weight="500"><tspan x="-46.553" y="0">-10,568</tspan></text>
+    <text id="외국인" transform="translate(1580 2120)" fill="#fff" font-size="13" font-family="Pretendard-Bold, Pretendard" font-weight="700"><tspan x="0" y="0">외국인</tspan></text>
+    <rect id="사각형_160" data-name="사각형 160" width="161" height="4" rx="2" transform="translate(1697 2113)" fill="#727272"/>
+    <rect id="사각형_159" data-name="사각형 159" width="17" height="4" rx="2" transform="translate(1761 2113)" fill="#4577ff"/>
+  </g>
+</svg>
