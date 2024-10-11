@@ -64,6 +64,7 @@ header .mobile_inner {
   width: 100%;
   height: 70px;
   background: #191919;
+  box-shadow: 0 2px 10px #707070;
   color: #878787;
   font-size: 30px;
   box-sizing: border-box;
@@ -71,25 +72,29 @@ header .mobile_inner {
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s;
+  /*
+  .myinfo{
+    margin-right:7%;
+    li{display:inline-block;}
+    li.last{margin-left:19px;}
+  }
+  */
 }
 header .mobile_inner .m_burger {
-  margin-left: 4.7%;
+  margin-right: 7%;
 }
-header .mobile_inner .myinfo {
-  margin-right: 4.7%;
+header .mobile_inner .m_logo {
+  margin-left: 7%;
 }
-header .mobile_inner .myinfo li {
-  display: inline-block;
-}
-header .mobile_inner .myinfo li.last {
-  margin-left: 19px;
+header .mobile_inner .m_logo img {
+  height: 30px;
 }
 
 /*메인*/
 #bg_1 {
   position: fixed;
   z-index: -999;
-  background: url("../img/bg1.png") no-repeat;
+  background: url("../img/flowfi_bg_subin.png") no-repeat;
   width: 100%;
   height: 2300px;
   background-size: cover;
@@ -237,6 +242,7 @@ header .mobile_inner .myinfo li.last {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
+  /*모바일 430~768 전용*/
 }
 #main_view .main_guide .login_ment .login_inner {
   margin: 40px 0 0 39px;
@@ -269,7 +275,7 @@ header .mobile_inner .myinfo li.last {
   content: "";
   display: block;
   width: 154px;
-  height: 40px;
+  height: 42px;
   background: #fff;
   border-radius: 20px;
   position: absolute;
@@ -282,12 +288,66 @@ header .mobile_inner .myinfo li.last {
 }
 #main_view .main_guide .login_ment b {
   margin: 0 40px 0 20px;
+  font-size: 18px;
+  text-align: center;
+}
+#main_view .main_guide .login_ment i {
+  font-size: 20px;
+}
+#main_view .main_guide .login_ment .xi-user-o {
+  margin-left: 10px;
 }
 #main_view .main_guide .login_ment b.join {
-  margin-right: 25px;
+  margin-right: 35px;
 }
 #main_view .main_guide .login_ment em {
   font-size: 18px;
+}
+#main_view .main_guide .login_ment .m_log,
+#main_view .main_guide .login_ment .m_join {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+#main_view .main_guide .login_ment .m_log::before {
+  content: "로그인";
+  display: block;
+  width: 110px;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  top: -80px;
+  right: 30px;
+  transition: all 0.4s;
+}
+#main_view .main_guide .login_ment .m_join::before {
+  content: "회원가입";
+  display: block;
+  width: 110px;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  top: -70px;
+  right: 30px;
+  transition: all 0.4s;
+}
+#main_view .main_guide .login_ment .m_log:hover::before {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#main_view .main_guide .login_ment .m_join:hover::before {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 #main_view .ranking {
   float: right;
@@ -582,7 +642,7 @@ header .mobile_inner .myinfo li.last {
 }
 #main_video .video_txt {
   position: absolute;
-  left: 26.8%;
+  left: 26%;
   text-align: center;
   z-index: 10;
 }
@@ -628,7 +688,7 @@ header .mobile_inner .myinfo li.last {
 #invest .in_list h3 {
   font-size: 24px;
   font-weight: bold;
-  margin: 39px 0 32px 39px;
+  margin: 39px 0 32px 43px;
 }
 #invest .in_list em {
   font-size: 16px;
@@ -1237,7 +1297,7 @@ footer .address .mobile_add {
     padding-top: 80px;
   }
   #main_video .iu_concert .video_txt {
-    left: 23%;
+    left: 25%;
   }
   #main_video .iu_concert .video_txt h2 {
     font-size: 47px;
@@ -1327,11 +1387,11 @@ footer .address .mobile_add {
     font-size: 15px;
   }
   #main_video .iu_concert .video_txt {
-    left: 21%;
+    left: 23%;
   }
   #main_video .iu_concert .video_txt h2 {
     font-size: 45px;
-    margin-top: 85px;
+    margin-top: 90px;
   }
   #main_video .iu_concert .video_txt p {
     margin-top: 35px;
@@ -1431,7 +1491,7 @@ footer .address .mobile_add {
     height: 790px;
   }
   #main_view .ranking .best_view h3 {
-    margin: 35px 0 30px 30px;
+    margin: 30px 0 28px 30px;
   }
   #main_view .ranking .best_view em {
     margin-left: 30px;
@@ -1449,11 +1509,11 @@ footer .address .mobile_add {
     height: 60px;
   }
   #main_video .iu_concert .video_txt {
-    left: 19%;
+    left: 22%;
   }
   #main_video .iu_concert .video_txt h2 {
     font-size: 40px;
-    margin-top: 75px;
+    margin-top: 80px;
   }
   #main_video .iu_concert .video_txt p {
     font-size: 16px;
@@ -1558,6 +1618,9 @@ footer .address .mobile_add {
   #main_view .main_guide .login_ment .login_inner {
     margin: 30px 0 0 30px;
   }
+  #main_view .main_guide .login_ment i {
+    display: none;
+  }
   #main_view .main_guide .login_ment em {
     display: none;
   }
@@ -1572,7 +1635,7 @@ footer .address .mobile_add {
     display: block;
     position: absolute;
     top: 40px;
-    right: -40px;
+    right: -35px;
   }
   #main_view .main_guide .login_ment ul img {
     display: none;
@@ -1609,7 +1672,8 @@ footer .address .mobile_add {
     height: 738px;
   }
   #main_view .ranking .best_view h3 {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    margin-top: 35px;
   }
   #main_view .ranking .best_view li::before {
     line-height: 50px;
@@ -1627,10 +1691,11 @@ footer .address .mobile_add {
     height: 50px;
   }
   #main_video .iu_concert .video_txt {
-    left: 15%;
+    left: 18%;
   }
   #main_video .iu_concert .video_txt h2 {
-    margin-top: 65px;
+    margin-top: 70px;
+    font-size: 35px;
   }
   #invest .inner {
     height: 40vw;
@@ -1722,13 +1787,24 @@ footer .address .mobile_add {
     display: block;
     font-size: 25px;
     font-weight: bold;
-    margin-top: 55px;
+    margin-top: 30px;
   }
   #main_view .main_guide .login_ment p {
     display: none;
   }
   #main_view .main_guide .login_ment ul {
-    top: 60px;
+    top: 135px;
+    left: -230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #main_view .main_guide .login_ment span {
+    margin-left: -40px;
+  }
+  #main_view .main_guide .login_ment b {
+    position: relative;
+    left: 40px;
   }
   #main_view .ranking {
     height: 420px;
@@ -1763,7 +1839,7 @@ footer .address .mobile_add {
   }
   #main_video .iu_concert .video_txt h2 {
     margin-top: 80px;
-    font-size: 35px;
+    font-size: 30px;
   }
   #invest {
     padding: 35px 60px 0 170px;
@@ -1903,11 +1979,11 @@ footer .address .mobile_add {
   }
   #main_view .main_guide .flowfi_guide p::before {
     top: 30%;
-    right: 80px;
+    right: 95px;
   }
   #main_view .main_guide .flowfi_guide p::after {
     top: 30%;
-    right: 80px;
+    right: 95px;
   }
   #main_view .main_guide .flowfi_guide p {
     font-size: 15px;
@@ -1918,6 +1994,16 @@ footer .address .mobile_add {
   }
   #main_view .main_guide .login_ment ul {
     right: -20px;
+  }
+  #main_view .main_guide .login_ment h4 {
+    margin-top: 50px;
+  }
+  #main_view .main_guide .login_ment ul {
+    display: none;
+  }
+  #main_view .main_guide .login_ment .m_log,
+  #main_view .main_guide .login_ment .m_join {
+    display: block;
   }
   #main_view .mobile_ranking {
     display: block;
@@ -2066,10 +2152,13 @@ footer .address .mobile_add {
     height: 58px;
   }
   header .mobile_inner .m_burger {
-    padding-left: 20px;
+    margin-right: 35px;
   }
-  header .mobile_inner .myinfo {
-    padding-right: 20px;
+  header .mobile_inner .m_logo {
+    margin-left: 35px;
+  }
+  header .mobile_inner .m_logo img {
+    height: 28px;
   }
   #main_view {
     padding: 90px 38px 0 38px;
@@ -2093,7 +2182,7 @@ footer .address .mobile_add {
     font-size: 12px;
   }
   #main_view .main_guide {
-    height: 258px;
+    height: 298px;
     margin-bottom: 39px;
   }
   #main_view .main_guide .flowfi_guide {
@@ -2110,7 +2199,7 @@ footer .address .mobile_add {
   #main_view .main_guide .flowfi_guide p::before,
   #main_view .main_guide .flowfi_guide p::after {
     top: 25%;
-    right: 84px;
+    right: 90px;
   }
   #main_view .main_guide .flowfi_guide p::before {
     width: 42px;
@@ -2123,15 +2212,11 @@ footer .address .mobile_add {
     background: url("../img/m_arrow_b.png") no-repeat;
   }
   #main_view .main_guide .login_ment {
-    height: 110px;
+    height: 150px;
   }
   #main_view .main_guide .login_ment h4 {
     font-size: 18px;
     margin-top: 26px;
-  }
-  #main_view .main_guide .login_ment ul {
-    margin-top: -22px;
-    right: -65px;
   }
   #main_view .main_guide .login_ment li {
     margin-bottom: 5px;
@@ -2140,17 +2225,24 @@ footer .address .mobile_add {
     width: 70px;
     height: 25px;
   }
-  #main_view .main_guide .login_ment .login_inner b {
+  #main_view .main_guide .login_ment .login_inner ul {
+    display: none;
+  }
+  #main_view .main_guide .login_ment .login_inner .m_log::before {
+    top: 15px;
+    left: 0;
+    width: 100px;
+    height: 30px;
     line-height: 30px;
-    font-size: 14px;
+    font-size: 15px;
   }
-  #main_view .main_guide .login_ment .login_inner span {
-    position: relative;
-    top: -13px;
-    left: -9px;
-  }
-  #main_view .main_guide .login_ment .login_inner .m_join {
-    left: -7px;
+  #main_view .main_guide .login_ment .login_inner .m_join::before {
+    top: -28px;
+    left: 120px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
   }
   #main_view .mobile_ranking {
     height: 591px;
@@ -2272,7 +2364,7 @@ footer .address .mobile_add {
     height: auto;
   }
   #product .m_p_inner .mobile_product li {
-    width: 339px;
+    width: 353px;
     margin-bottom: 40px;
   }
   #product .m_p_inner .mobile_product li:last-child {
@@ -2280,7 +2372,7 @@ footer .address .mobile_add {
     margin-top: 40px;
   }
   #collabo {
-    padding: 60px 38px 0 38px;
+    padding: 60px 38px 40px 38px;
   }
   #collabo .company {
     border-radius: 18px;

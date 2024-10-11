@@ -30,15 +30,21 @@ header{
    .mobile_inner{
     position:fixed; visibility:hidden; opacity:0;
     width:100%; height:70px; background:#191919;
+    box-shadow:0 2px 10px #707070;
     color:#878787; font-size:30px; box-sizing:border-box;
     display:flex; justify-content:space-between;
     align-items:center; transition:all .3s;
-    .m_burger{margin-left:4.7%;}
+    .m_burger{margin-right:7%;}
+    .m_logo{margin-left:7%;
+    img{height:30px;}
+    }
+    /*
     .myinfo{
-      margin-right:4.7%;
+      margin-right:7%;
       li{display:inline-block;}
       li.last{margin-left:19px;}
     }
+    */
    }//e:.mobile_inner
 }//e:header
 
@@ -46,7 +52,7 @@ header{
 /*메인*/
 #bg_1{
   position:fixed; z-index:-999;
-  background:url('../img/bg1.png') no-repeat;
+  background:url('../img/flowfi_bg_subin.png') no-repeat;
   width:100%; height:2300px; background-size:cover;
   top:-700px; left:20%;
 
@@ -117,14 +123,32 @@ header{
     ul{margin-bottom:20px; display:flex;}
     li{font-size:21px; color:#000; line-height:18px;
     position:relative;}
-    li::before{content:''; display:block; width:154px; height:40px;
+    li::before{content:''; display:block; width:154px; height:42px;
     background:#fff; border-radius:20px; position:absolute;
     top:-11px; left:0; z-index:-2;}
     li:first-child{margin-right:50px;}
-    b{margin:0 40px 0 20px;}
-    b.join{margin-right:25px;}
+    b{margin:0 40px 0 20px; font-size:18px; text-align:center;}
+    i{font-size:20px;}
+    .xi-user-o{margin-left:10px;}
+    b.join{margin-right:35px;}
     em{font-size:18px;}
-  }//e:.guide_ment
+
+    /*모바일 430~768 전용*/
+    .m_log,
+    .m_join{display:none; position:relative; cursor:pointer;}
+    .m_log::before{content:'로그인'; display:block; width:110px; height:40px;
+    background:#fff; border-radius:20px; position:absolute; color:#000;
+    text-align:center; line-height:40px; top:-80px; right:30px;
+    transition:all .4s;}
+    .m_join::before{content:'회원가입'; display:block; width:110px; height:40px;
+    background:#fff; border-radius:20px; position:absolute; color:#000;
+    text-align:center; line-height:40px; top:-70px; right:30px;
+    transition:all .4s;}
+    .m_log:hover::before{background:#000; color:#fff;
+    border:1px solid #fff;}
+    .m_join:hover::before{background:#000; color:#fff;
+    border:1px solid #fff;}
+  }//e:.login_ment
   }//e:.main_guide
   .ranking{
     float:right; border:1px solid #7e7e7e;
@@ -221,7 +245,7 @@ header{
     object-position:bottom 120px right 0;}
   }//e:.inner
   .video_txt{
-    position:absolute; left:26.8%;
+    position:absolute; left:26%;
     text-align:center; z-index:10;
     h2{font-size:50px; font-weight:bold; margin-top:118px;}
     p{font-size:18px; margin-top:60px; line-height:2;}
@@ -241,7 +265,7 @@ header{
     border-radius:28px; background:rgba(0,0,0,.5);
     backdrop-filter:blur(50px);
     h3{font-size:24px; font-weight:bold;
-    margin:39px 0 32px 39px;}
+    margin:39px 0 32px 43px;}
     em{font-size:16px; font-weight:lighter; margin-left:26px;}
     pre{
       font-size:21px; font-weight:bold; line-height:1.2; margin:5px 0 0 35px;
@@ -486,7 +510,7 @@ footer{
   #main_video{
     padding-top:80px;
     .iu_concert .video_txt{
-      left:23%;
+      left:25%;
       h2{font-size:47px; margin-top:100px;}
       p{margin-top:40px;}
     }
@@ -555,8 +579,8 @@ footer{
 
   #main_video{
     .iu_concert .video_txt{
-        left:21%;
-        h2{font-size:45px; margin-top:85px;}
+        left:23%;
+        h2{font-size:45px; margin-top:90px;}
         p{margin-top:35px;}
       }
   }//e:#main_video
@@ -626,7 +650,7 @@ footer{
     .ranking{
       height:790px;
       .best_view{
-        h3{margin:35px 0 30px 30px;}
+        h3{margin:30px 0 28px 30px;}
         em{margin-left:30px;}
         li::before{margin-left:30px;}
         li::after{right:30px;}
@@ -638,8 +662,8 @@ footer{
 
   #main_video{
     .iu_concert .video_txt{
-      left:19%;
-      h2{font-size:40px; margin-top:75px;}
+      left:22%;
+      h2{font-size:40px; margin-top:80px;}
       p{font-size:16px; margin-top:30px;}
     }
   }//e:#main_video
@@ -709,11 +733,12 @@ footer{
       .login_ment{
         width:100%; height:155px;
         .login_inner{margin:30px 0 0 30px;}
+        i{display:none;}
         em{display:none;}
         h3{font-size:26px; margin-bottom:10px;}
         p{font-size:16px;}
         ul{
-        display:block; position:absolute; top:40px; right:-40px;
+        display:block; position:absolute; top:40px; right:-35px;
         img{display:none;}
         }
         li{margin-bottom:40px;}
@@ -730,7 +755,7 @@ footer{
       .ranking{
         width:38%; height:738px;
         .best_view{
-          h3{margin-bottom:40px;}
+          h3{margin-bottom:45px; margin-top:35px;}
           li::before{line-height:50px;}
           li::after{line-height:55px; top:-5px; right:25px;}
           p{margin-right:20px; margin-left:-10px;}
@@ -742,8 +767,8 @@ footer{
 
   #main_video{
     .iu_concert .video_txt{
-      left:15%;
-      h2{margin-top:65px;}
+      left:18%;
+      h2{margin-top:70px; font-size:35px;}
     }
   }//e:#main_video
 
@@ -808,9 +833,12 @@ footer{
         height:195px;
         h3{display:none;}
         h4{display:block; font-size:25px; font-weight:bold;
-        margin-top:55px;}
+        margin-top:30px;}
         p{display:none;}
-        ul{top:60px;}
+        ul{top:135px; left:-230px; display:flex;
+          flex-direction:row; justify-content:center;}
+        span{margin-left:-40px;}
+        b{position:relative; left:40px;}
       }
     }//e:.main_guide
 
@@ -835,7 +863,7 @@ footer{
     }
     .iu_concert .video_txt{
       left:8%;
-      h2{margin-top:80px; font-size:35px;}
+      h2{margin-top:80px; font-size:30px;}
     }
   }//e:#main_video
 
@@ -927,13 +955,17 @@ footer{
       margin-bottom:20px;
       .flowfi_guide{
         height:180px;
-        p::before{top:30%; right:80px;}
-        p::after{top:30%; right:80px;}
+        p::before{top:30%; right:95px;}
+        p::after{top:30%; right:95px;}
         p{font-size:15px; margin:-40px 0 0 500px;}
       }
       .login_ment{
         height:180px;
         ul{right:-20px;}
+        h4{margin-top:50px;}
+        ul{display:none;}
+        .m_log,
+        .m_join{display:block;}
       }
     }//e:.main_guide
 
@@ -1021,8 +1053,11 @@ footer{
     width:100%;
     box-sizing:border-box;
     .mobile_inner{height:58px;
-    .m_burger{padding-left:20px;}
-    .myinfo{padding-right:20px;}
+    .m_burger{margin-right:35px;}
+    .m_logo{
+    margin-left:35px;
+    img{height:28px;}
+    }
     }
   }//e:header
 
@@ -1041,28 +1076,29 @@ footer{
     }//e:.best
 
     .main_guide{
-      height:258px; margin-bottom:39px;
+      height:298px; margin-bottom:39px;
       .flowfi_guide{
         height:110px;
         h3{font-size:20px; margin-top:26px;}
         p{margin:-35px 0 0 210px; font-size:13px;}
         p::before,
-        p::after{top:25%; right:84px;}
+        p::after{top:25%; right:90px;}
         p::before{width:42px; height:12px;
         background:url('../img/m_arrow_w.png') no-repeat;}
         p::after{width:42px; height:12px;
         background:url('../img/m_arrow_b.png') no-repeat;}
       }//e:.flowfi_guide
       .login_ment{
-        height:110px;
+        height:150px;
         h4{font-size:18px; margin-top:26px;}
-        ul{margin-top:-22px; right:-65px;}
         li{margin-bottom:5px;}
         li::before{width:70px; height:25px;}
         .login_inner{
-          b{line-height:30px; font-size:14px;}
-          span{position:relative; top:-13px; left:-9px;}
-          .m_join{left:-7px;}
+          ul{display:none;}
+          .m_log::before{top:15px; left:0; width:100px; height:30px;
+          line-height:30px; font-size:15px;}
+          .m_join::before{top:-28px; left:120px; width:100px; height:30px;
+          line-height:30px; font-size:15px;}
         }
       }//e:.login_ment
     }//e:.main_guide
@@ -1129,14 +1165,14 @@ footer{
     .m_p_inner{
       width:100% !important; height:auto;
       .mobile_product{
-        li{width:339px; margin-bottom:40px;}
+        li{width:353px; margin-bottom:40px;}
         li:last-child{margin-bottom:0; margin-top:40px;}
       }
     }//e:.m_p_inner
   }//e:#product
 
   #collabo{
-    padding:60px 38px 0 38px;
+    padding:60px 38px 40px 38px;
     .company{
       border-radius:18px; margin-bottom:40px;
       ul{height:70px;}

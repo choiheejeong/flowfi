@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLOWFI</title>
 
+    <!--파비콘-->
+    <link rel="icon" href="img/logo_mobile.png">
+
     <!--외부 CSS-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +31,7 @@
       </div><!--//.home-->
       <div class="myinfo">
         <ul>
-          <li><a href="#"><i class="xi-profile"></i></a></li>
+          <li><a href="sub/index.html"><i class="xi-profile"></i></a></li>
           <li class="last"><a href="#"><i class="xi-bell"></i></a></li>
         </ul>
       </div>
@@ -36,15 +39,20 @@
 
     <!--모바일-->
     <div class="mobile_inner">
+      <div class="m_logo">
+        <a href="#"><img src="img/logo_mobile.png" alt=""/></a>
+      </div><!--//e:.m_logo-->
       <div class="m_burger">
         <a href="#"><i class="xi-bars"></i></a>
       </div><!--//.m_burger-->
+      <!---
       <div class="myinfo">
         <ul>
           <li><a href="#"><i class="xi-profile"></i></a></li>
           <li class="last"><a href="#"><i class="xi-bell"></i></a></li>
         </ul>
       </div>
+      -->
     </div><!--//e:.mobile_inner-->
   </header>
 
@@ -101,7 +109,7 @@
          </div><!--//e:.m_swiper-->
         <div class="ranking">
           <div class="best_view">
-            <h3>조회수 랭킹<em>2024.10.03 기준</em></h3>
+            <h3>TOP 종목<em>2024.10.04 기준</em></h3>
             <ul>
               <li class="graph1"><p><a href="#"><img src="img/rank1.png" alt=""/></p><pre>하이브
 <span>HYBE ENM</span></a></pre></li>
@@ -132,16 +140,19 @@
             <h3>플로피만의 특별한 혜택, 플로피 리워드</h3>
             <!--모바일-->
             <h4>지금 플로피에 회원가입하고,<br/>
-            특별한 혜택을 받아보세요!</h4>
-            <p>플로피 회원이세요? 로그인을 통해 나만의 리워드를 확인해보세요.<br/>
-            플로피 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.</p>
+            매일 바뀌는 다양한 미션에 참여해보세요!</h4>
+            <p>플로피 리워드는 다양한 챌린지에 참여해 리워드를 받을 수 있으며,
+            <br/>팬 활동을 통해 특별한 혜택을 누릴 수 있습니다.</p>
+            <!--모바일-->
+            <p class="m_log"><a href="#"></a></p>
+            <p class="m_join"><a href="#"></a></p>
             <ul>
-              <li><a href="#"><b><span>로그인</span></b><img src="img/r_arrow.png" alt=""/></a></li>
-              <li><a href="#"><b class="join"><span class="m_join">회원가입</span></b><img src="img/r_arrow.png" alt=""/></a></li>
+              <li><a href="#"><b><span>로그인</span></b><i class="xi-user-o"></i></a></li>
+              <li><a href="#"><b class="join"><span>회원가입</span></b><i class="xi-plus-circle-o"></i></a></li>
             </ul>
             <br/>
-            <em>회원가입 후, 플로피에 카드를 등록해보세요!<br/>
-            카드를 등록하여 플로피 리워드 회원이 되신 후, 첫 투자를 하시면 리워드를 적립해드려요!</em>
+            <em>플로피 회원이세요? 로그인을 통해 나만의 리워드를 확인해보세요.<br/>
+              플로피 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.</em>
           </div><!--//e:.login_inner-->
           </div><!--//e:.login_ment-->
         </div><!--//e:.main_guide-->
@@ -149,7 +160,7 @@
         <!--모바일-->
         <div class="mobile_ranking">
           <div class="best_view">
-            <h3>조회수 랭킹<em>2024.10.04 기준</em></h3>
+            <h3>TOP 종목<em>2024.10.04 기준</em></h3>
             <ul>
               <li class="graph1"><p><a href="#"><img src="img/rank1.png" alt=""/></p><pre>하이브
 <span>HYBE ENM</span></a></pre></li>
@@ -188,8 +199,9 @@
             <br/>그로 인해 경제적 혜택을 누릴 수 있는 기회를 제공합니다.
             </span>
           </div><!--//e:.video_txt-->
-        <video autoplay plasinline loop muted poster="img/hand.jpg">
+       <!--- <video autoplay plasinline loop muted poster="img/hand.jpg">-->
           <source src="https://arof.kr/main_video.mp4" type="video/mp4">
+          <source src="img/main_video.mp4" type="video/mp4">
         </video>
       </article><!--//e:.iu_concert-->
       </div><!--//e:.inner-->
